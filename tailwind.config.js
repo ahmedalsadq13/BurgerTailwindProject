@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.js"],
-  content: ["./src/**/*.{html,js}"],
+  // purge: ["./src/**/*.html", "./src/**/*.vue", "./src/**/*.js"],
+  content: ["./*.{html,js}"],
   darkMode: "class",
   theme: {
     extend: {

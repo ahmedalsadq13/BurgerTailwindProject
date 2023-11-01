@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth overflow-x-hidden;
+  }
+  body {
+    @apply bg-white dark:bg-blackColor2 text-slate-950 dark:text-sand_dollar  tracking-wider text-[62.5%] font-dmsans;
+  }
+
+  section {
+    @apply pt-7 pb-7 lg:py-10 scroll-m-[75px];
+  }
+  ul {
+    @apply text-sm md:text-lg;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-slate-950 inline-block text-lg font-medium py-3 px-8 capitalize cursor-pointer rounded-full text-center border-2 border-yellow ease-linear duration-200;
+  }
+  .btn-primary {
+    @apply border-transparent bg-yellow hover:border-yellow hover:bg-transparent hover:text-yellow;
+  }
+}
+
+@layer utilities {
+  .home_title,
+  .card_title,
+  .section_title {
+    @apply font-oswald font-bold uppercase  dark:text-sand_dollar;
+  }
+  .home_title,
+  .section_title {
+    @apply text-4xl lg:text-6xl;
+  }
+  .section_title {
+    @apply text-3xl;
+  }
+  .card_title {
+    @apply text-lg lg:text-2xl mb-5;
+  }
+  .separator {
+    @apply w-28 h-[2px] bg-yellow my-5 mx-auto;
+  }
+  .standard_paragraph {
+    @apply text-slate-700 text-sm xl:text-lg leading-7 dark:text-sand_dollar;
+  }
+}
+
+#theme-toggle {
+  @apply dark:text-sand_dollar;
+}
+/* General */
+header ul li {
+  @apply hover:text-sand_dollar ease-in-out duration-200 dark:text-sand_dollar;
+}
+/* Features List */
+.features_list {
+  @apply flex gap-5 justify-center my-7 text-sm md:justify-between md:gap-0 lg:justify-start lg:gap-10;
+}
+.features_list .feat {
+  @apply flex flex-col items-center gap-2;
+}
+.features_list .feat i {
+  @apply text-3xl text-yellow;
+}
+
+/* Category  */
+#category .card {
+  @apply border-2 border-yellow flex py-3 rounded-lg overflow-hidden ease-in-out duration-200  hover:bg-yellow hover:text-white md:flex-1;
+}
+#category .card h3 {
+  @apply dark:group-hover:text-white;
+}
+#category .card p {
+  @apply text-lg my-3;
+}
+#category .card a {
+  @apply duration-200 ease-in-out text-lg cursor-pointer border p-3 my-2 inline-flex rounded-md;
+}
+/* Promo */
+#promo {
+  position: relative;
+}
+.promo-card {
+  @apply relative flex flex-col z-10  shadow-md backdrop-blur-sm rounded-lg p-5 ease-in-out duration-200 border border-grayColor dark:border-blackColor;
+}
+
+.best_menu_items .item_wrap {
+  @apply flex flex-col border border-grayColor dark:border-blackColor dark:hover:shadow-lg rounded-md hover:shadow-md hover:scale-[1.02] duration-200 ease-in-out;
+}
+.best_menu_items .item_wrap > div:first-of-type {
+  @apply rounded-md;
+}
+
+.best_menu_items .item_wrap > div:last-of-type {
+  @apply pb-5;
+}
+.best_menu_tabs ul li .btn {
+  @apply bg-transparent border-yellow text-yellow hover:bg-whiteColor;
+}
+
+.best_menu_tabs ul li .btn.active {
+  @apply bg-yellow text-white;
+}
+.special_producct_card {
+  @apply flex overflow-hidden justify-center items-center;
+}
+.item_wrap img {
+  @apply max-w-full object-cover max-h-full;
+}
+/* Swiper */
+.swiper-pagination-bullet-active {
+  @apply bg-slate-900;
+}
+
+.review-item {
+  @apply bg-yellow dark:border dark:border-black dark:bg-transparent;
+}
+.review-item p,
+.review-item i,
+.review-item span {
+  @apply text-whiteColor;
+}
