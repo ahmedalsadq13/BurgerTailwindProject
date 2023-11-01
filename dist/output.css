@@ -776,6 +776,10 @@ ul {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .max-w-\[100\%\] {
   max-width: 100%;
 }
@@ -1565,6 +1569,10 @@ header ul li:hover {
     margin-bottom: 5rem;
   }
 
+  .lg\:mt-0 {
+    margin-top: 0px;
+  }
+
   .lg\:h-40 {
     height: 10rem;
   }
@@ -1613,5 +1621,10 @@ header ul li:hover {
   .lg\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
